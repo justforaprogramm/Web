@@ -4,15 +4,20 @@
     flex-direction: column;
 }
 nav{
-    background-color: black;
+    background-color: rgb(46, 46, 46);
     color: blue;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    margin: 10px;
+}
+nav > a{
+    padding: 5px;
+    color: rgb(97, 97, 255);
 }
 body{
-    background-color: rgb(67, 70, 75);
-    color: bisque;
+    background-color: rgb(100, 100, 100);
+    color: rgb(255, 229, 196);
+    display: flex;
+    justify-content: center;
 }
