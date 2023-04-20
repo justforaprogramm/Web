@@ -11,6 +11,9 @@ nav{
     align-items: center;
     justify-content: space-around;
 }
+nav > #imghome{
+    height: 50%;
+}
 nav > a{
     padding: 5px;
     color: rgb(97, 97, 255);
@@ -18,6 +21,9 @@ nav > a{
 body{
     background-color: rgb(100, 100, 100);
     color: rgb(255, 229, 196);
+}
+body > h1 {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
 }
