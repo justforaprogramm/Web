@@ -6,6 +6,10 @@
 nav{
     background-color: black;
     color: blue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 body{
     background-color: rgb(67, 70, 75);
