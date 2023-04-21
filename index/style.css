@@ -15,6 +15,9 @@ nav > a{
     padding: 5px;
     color: rgb(97, 97, 255);
 }
+nav > #imghome{
+    background-color: red;
+}
 body{
     background-color: rgb(100, 100, 100);
     color: rgb(255, 229, 196);
