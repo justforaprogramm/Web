@@ -11,11 +11,6 @@ nav{
     align-items: center;
     justify-content: space-around;
 }
-nav > #imghome{
-    background-image: url(house.png);
-    padding: 10px;
-    margin: 5px;
-}
 nav > a{
     padding: 5px;
     color: rgb(97, 97, 255);
