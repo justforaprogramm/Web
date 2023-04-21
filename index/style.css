@@ -11,9 +11,14 @@ nav{
     align-items: center;
     justify-content: space-around;
 }
+nav > #imghome{
+    background-image: url(house.png);
+    padding: 10px;
+}
 nav > a{
     padding: 5px;
     color: rgb(97, 97, 255);
+
 }
 body{
     background-color: rgb(100, 100, 100);
