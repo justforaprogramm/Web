@@ -14,6 +14,7 @@ nav{
 nav > #imghome{
     background-image: url(house.png);
     padding: 10px;
+    margin: 5px;
 }
 nav > a{
     padding: 5px;
