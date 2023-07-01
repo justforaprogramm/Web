@@ -1,0 +1,24 @@
+using System;  
+using MonoBrick.EV3;  
+  
+public static class Program{  
+  static void Main(string[] args)  
+  {  
+    var ev3 = new Brick<Sensor,Sensor,Sensor,Sensor>("usb");  
+    try{  
+        ev3.Connection.Open();  
+        ev3.MotorA.On(50);  
+        System.Threading.Thread.Sleep(3000);  
+        ev3.MotorA.Off();  
+    }  
+    catch(Exception e){  
+        Console.WriteLine(e.StackTrace);  
+        Console.WriteLine("Error: " + e.Message);  
+        Console.WriteLine("Press any key to end...");  
+        Console.ReadKey();                
+    }  
+    finally{  
+        ev3.Connection.Close();  
+    }  
+  }  
+}  

@@ -1,0 +1,201 @@
+:root{
+    --primary: hsl(348, 97%, 63%, 0.75);
+    --secondary: hsl(230, 96%, 62%, 0.75);
+    --thirdly: hsl(146, 20%, 78%, 0.75);
+    --forth: hsl(202, 17%, 39%, 0.75);
+    --fith: hsl(202, 17%, 39%, 0.75);
+    --six: hsl(0, 0%, 100%, 0.001);
+    --seventh: hsl(0, 0%, 100%, 1);
+}
+* {margin: 0; padding: 0; box-sizing: border-box}
+body { 
+    background-color: white;
+}
+.h {
+    display: grid;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    width: 98.75vw;
+    font-family: 'Playball';
+    font-size: 4.5rem;
+    color: white;
+    place-items: center;
+    place-content: center;
+    background:linear-gradient(135deg, var(--primary), var(--secondary)),
+                url( './html/Pictures/geometric.jpeg') no-repeat center center / cover;
+}
+.h > h1 {
+    color: black;
+    text-align: center;
+}
+
+.dI {
+    color: black;
+    background: rgb(68, 87, 255);
+    border-radius: 5px;
+}
+
+/* content*/
+@import url('https://fonts.googlleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.content{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    background-color: #525252;
+    padding: 3px;
+
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    border-radius: 25px;
+    padding: 40px 0;
+}
+.slide-content{
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+.card{
+    border-radius: 25px;
+    background-color: #FFF;
+}
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+.image-content{
+    row-gap: 5px;
+    position: relative;
+    padding: 25px 0;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(224, 89%, 60%);
+    border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: hsl(224, 89%, 60%);
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #FFF;
+}
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid hsl(224, 89%, 60%);
+}
+.layer{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+.description{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+.button{
+    border: none;
+    font-size: 16px;
+    color: #FFF;
+    padding: 8px 16px;
+    background-color: hsl(224, 89%, 60%);
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button:hover{
+    background: hsl(224, 89%, 55%);
+    
+}
+.swiper-navBtn:hover{
+    color: #6E93f7;
+    transition: color 0.3s ease;
+}
+.swiper-navBtn{
+    color: #4070F4;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+    font-size:  40px;
+}
+.swiper-button-next{
+    right:0;
+}
+.swiper-button-prev{
+    left: 0;
+}
+.swiper-pagination-bullet{
+    background-color: #6E93f7;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background-color: #4070F4;
+}
+@media screen and (max-width:768px) {
+    .slide-content{
+        margin:0 10px;
+    }
+    .swiper-navBtn{
+        display: none;
+    }
+}
+
+
+
+
+
+
+ /* footer*/
+.Impre{
+    background: linear-gradient(135deg,var(--thirdly),var(--forth),var(--fith)), 
+                url( './html/Pictures/binary.jpeg') no-repeat center center / cover;
+    padding: 200px;
+    text-align: left;
+}
+#over{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 37.5px;
+}
+.Impre > ul {
+    color: rgb(0, 0, 0);
+}
+.Impre > ul > li >.linkb {
+    color: rgb(0, 0, 0);
+}
+#over > .a {
+    color: rgb(108, 108, 146);
+}

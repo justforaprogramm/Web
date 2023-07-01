@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--title-->
+    <title>Layer4</title>
+    <!-- CSS-->
+    <link href="../css/Layer4.css" type="text/css" rel="stylesheet" id="logo">
+</head>
+<body>
+    <a href="../index.html">back to the beginning</a>
+    <a href="./classification.html">back to classification</a>
+    <h1>Layer 4</h1>
+    <div class="iv">
+        <ol>
+          <h2>Table of content</h2>
+          <li>Greeting</li>
+          <li>Over all explanation</li>
+          <li>Reading time</li>
+          <li>Explanation for each Layer</li>
+          <li>Layer 4</li>
+          <li>Protocols</li>
+          <li>Communication Process</li>
+          <li>Summary / End</li>
+        </ol>
+      </div>
+    <nav>
+        <h3>What Protokoll this Layer use:</h3>
+        <p class="whatuse">
+             ISO/IEC 8073, TP0, TP1, TP2, TP3, TP4 (X.224), ISO/IEC 8602X.234
+        </p>
+
+        <h3>Vocab you have to know:</h3>
+
+        <ol>
+            <h3>Voc.:</h3>
+            <li>segments = refer to small, discrete units of data that are transmitted over a network</li>
+            <li>reliability = refers to the ability of a computer to perform its intended functions consistently, accurately, and without errors or failures.</li>
+            <li>flow control = refers to the process of managing the rate of data transmission between devices on a network to prevent data loss, congestion, and other issues</li>
+            <li>acknowledgments =  receiving device to confirm that it has successfully received a packet or segment of data transmitted by a sender</li>
+            <li>connection-oriented = refers to a type of communication protocol in which a reliable and dedicated connection is established between two devices before data is transmitted</li>
+            <li>encapsulation = refers to the process of enclosing data in a specific format or protocol to enable its transmission over a network</li>
+            <li>conseptual = refers to something that exists in the mind or as an abstract idea rather than a physical or concrete entity</li>
+        </ol>
+    </nav>
+    <p>
+        Fourth Layer The transport layer facilitates the transfer <br>
+        of variable-length data sequences from a source host to a destination host across a network,<br>
+        while ensuring quality-of-service functions. <br>
+        This involves breaking down large protocol data units or long data streams into smaller segments <br>
+        due to the maximum packet size imposed by the network layer,<br>
+        called the maximum transmission unit (MTU). <br>
+        The amount of data in a segment must be small enough to allow for a network-layer header <br>
+        and a transport-layer header. The transport layer controls the reliability <br>
+        of a given link between the source and destination hosts through flow control, <br>
+        error control, and acknowledgments of sequence and existence. <br>
+        Some protocols are state- and connection-oriented, <br>
+        allowing the transport layer to keep track of segments and retransmit those that fail delivery. <br>
+        However, protocols like UDP are used in applications that can tolerate some packet loss, <br>
+        reordering, errors, or duplication. <br>
+        The OSI connection-oriented transport protocol defines five classes <br>
+        of connection-mode transport protocols ranging from TP0 to TP4, <br>
+        with TP0 providing the fewest features and TP4 being the most reliable. <br>
+        The transport layer can be compared to a post office that deals with the dispatch <br>
+        and classification of mail and parcels sent. <br>
+        Tunnelling protocols operate at the transport layer, <br>
+        such as carrying non-IP protocols or end-to-end encryption with IPsec.<br>
+         While GRE might seem like a network-layer protocol, <br>
+         it becomes closer to a transport protocol when encapsulation of the payload takes place only <br>
+         at the endpoint. L2TP carries PPP frames inside transport segments.<br>
+        
+    </p>
+</body>
+    <a href="./summary.html">go to summary</a>
+</html>

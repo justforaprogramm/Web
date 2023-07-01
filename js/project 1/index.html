@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--css-->
+    <style>
+        html{
+        background-color:black;
+        color: rgb(133, 133, 133);
+        }
+    </style>
+    <!--Json-->
+    <script>
+    let contact1 = [
+    {
+        "name": "Stefan",   
+        "alter": 21,
+        "kennt_json": true,
+        "hobbies":["Tennis","Angeln","Schach"],
+        "adresse":{
+            "Strasse": "LOLstr.",
+            "plz":"56541"
+        }
+    },
+    {
+        "name":"Steffi",
+        "alter":27,
+        "kennt_json":true,
+        "hobbies":["Tennis","Angeln","Schach"],
+        "adresse":{
+            "Strasse": "LOLstr.",
+            "plz":"56541"
+        }
+    }
+];
+    console.log(contact1[1].adresse["Strasse"])
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

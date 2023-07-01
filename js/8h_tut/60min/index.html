@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>60min</title>
+    <!--Css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div>
+        <label class="topc"><ins><b>circumference:</b></ins></label>
+        <Label>Enter Radius:</Label>
+        <form id="form">
+            <p><input type="text" id="input" placeholder="Number"></p>
+            <button id="bu1">Submit</button>
+        </form>
+        <p id="p1"></p>
+    </div>
+
+    <div>
+        <label class="topc"><b><ins>Pythagoras:</ins></b></label>
+        <Label>Enter leg:</Label>
+        <form id="sqrt">
+            <p><input type="text" id="A" placeholder="leg 1"></p>
+            <p><input type="text" id="B" placeholder="leg 2"></p>
+            <button id="bu2">Submit</button>
+        </form>
+        <p id="p2"></p>
+    </div>
+
+    <div class="Rdn">
+        <label class="topc"><b><ins>RDN:</ins></b></label>
+        <Label id="Rdn2Label">0</Label>
+        <Label id="Rdn0Label">0</Label>
+        <Label id="Rdn1Label">0</Label>
+
+        <button id="btn">Roll</button>
+    </div>
+
+    <div class="counter">
+        <label class="topc"><b><ins>Counter:</ins></b></label>
+        <label id="count">0</label><br>
+        <div class="button">
+            <button id="dc">decrease</button>
+            <button id="reset">reset</button>
+            <button id="ic">increase</button>
+        </div>
+    </div>
+    
+</body>
+<footer>
+    <script src="index.js"></script>
+</footer>
+</html>

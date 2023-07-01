@@ -1,0 +1,39 @@
+using System;  
+using MonoBrick.EV3;  
+using System.Threading;  
+public static class Program1{  
+    static Brick<Sensor,Sensor,Sensor,Sensor> ev3;    
+    static void Main(string[] args)  
+    {  
+        ev3 = new Brick<Sensor,Sensor,Sensor,Sensor>("usb");  
+        try{  
+            ev3.Connection.Open();  
+            ev3.MotorA.ResetTacho();  
+            ev3.MotorA.On(50, 6*360,true);  
+            WaitForMotorToStop();  
+            Console.WriteLine("Position: " + ev3.MotorA.GetTachoCount());  
+            ev3.MotorA.On(-50, 9*360, true);  
+            WaitForMotorToStop ();  
+            Console.WriteLine("Position: " + ev3.MotorA.GetTachoCount());  
+            ev3.MotorA.MoveTo(50,0,true);  
+            WaitForMotorToStop();  
+            ev3.MotorA.Off();  
+            Console.WriteLine("Position: " + ev3.MotorA.GetTachoCount());  
+        }  
+        catch(Exception e){  
+            Console.WriteLine(e.StackTrace);  
+            Console.WriteLine("Error: " + e.Message);  
+            Console.WriteLine("Press any key to end...");  
+            Console.ReadKey();                
+        }  
+        finally{  
+            ev3.Connection.Close();  
+        }  
+    }  
+      
+    static void WaitForMotorToStop ()  
+    {  
+        Thread.Sleep(500);  
+        while(ev3.MotorA.IsRunning()){Thread.Sleep(50);}  
+    }  
+} 
