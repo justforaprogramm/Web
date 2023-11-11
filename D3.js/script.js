@@ -6,16 +6,16 @@ const DUMMY_DATA = [
 ];
 
 const container = d3.select('div')
-  .classed('container', true)
-  .style('border', '1px solid red');
+  .classed('container', true);
 
-const bars = container.selectAll('div')
+const bars = container
+  .select('.container')
   .data(DUMMY_DATA)
   .enter()
-  .append('div')
+  .append('rect')
   .classed('bar', true)
-  .style('width', '50px')
-  .style('height', '150px');
+  .attr('width', 50)
+  .attr('height', data => (data.value * 15));
 
 
 //d3.select('div')
