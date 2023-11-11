@@ -4,15 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--title-->
-    <title>p1</title>
-    <!--css-->
-    <link rel="stylesheet" href="./css/p1.css">
+    <title>Kniffel</title>
 </head>
-<nav>
-    
-</nav>
 <body>
-    <h1>p1</h1>
+    
 </body>
 </html>
